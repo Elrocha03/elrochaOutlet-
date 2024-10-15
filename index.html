@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elrocha Outlet - Loja de Roupas Masculinas</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Anton&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to bottom, #000, #001f3f); /* Gradiente do preto para azul marinho */
+            color: #fff; /* Texto branco */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Anton', sans-serif; /* Fonte diferente */
+            font-size: 3rem;
+            background: linear-gradient(90deg, #1e90ff, #ff4500); /* Gradiente azul para vermelho */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; /* Texto transparente para mostrar o gradiente */
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra do texto */
+            transition: transform 0.3s ease;
+        }
+
+        h1:hover {
+            transform: scale(1.05);
+        }
+
+        .phrases {
+            font-size: 1.2rem;
+            background: linear-gradient(90deg, #1e90ff, #ff4500); /* Gradiente para as frases */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; /* Texto transparente para mostrar o gradiente */
+            margin: 1rem 0;
+        }
+
+        .nossos-vendedores {
+            font-size: 1.5rem;
+            background: linear-gradient(90deg, #ff4500, #ff9999); /* Gradiente para o título "Nossos Vendedores" */
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent; /* Texto transparente para mostrar o gradiente */
+            margin: 2rem 0; /* Margem maior para separação */
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra do texto */
+        }
+
+        .button {
+            background: #333; /* Cor escura para os botões */
+            color: #fff;
+            text-decoration: none;
+            padding: 1rem; /* Altura igual */
+            border-radius: 5px;
+            margin: 0.5rem;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+            width: 200px; /* Largura fixa para os botões */
+            border: none; /* Remove a borda */
+            position: relative; /* Para o efeito */
+            overflow: hidden; /* Para cortar o brilho */
+        }
+
+        .button:hover {
+            background: #444; /* Um tom de cinza mais claro para o hover */
+            transform: scale(1.05); /* Aumenta o botão */
+        }
+
+        .button:active {
+            transform: scale(0.95);
+        }
+
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300%;
+            height: 300%;
+            background: radial-gradient(circle, rgba(30, 64, 120, 0.5) 2px, transparent 4px),
+                        radial-gradient(circle, rgba(30, 64, 120, 0.4) 2px, transparent 4px),
+                        radial-gradient(circle, rgba(30, 64, 120, 0.3) 2px, transparent 4px),
+                        radial-gradient(circle, rgba(30, 64, 120, 0.6) 2px, transparent 4px);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 5px, 5px 10px, 15px 15px;
+            opacity: 0.7;
+            animation: sparkle 0.8s infinite ease-in-out; /* Animação mais rápida e intensa */
+        }
+
+        @keyframes sparkle {
+            0% {
+                opacity: 0.3;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0.3;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Elrocha Outlet</h1>
+    <p class="phrases">Estilo e atitude para quem sabe o que quer! Ofertas imbatíveis, qualidade incomparável.</p>
+    <p class="nossos-vendedores">Nossos Vendedores</p>
+    <a href="https://wa.me/5534991723701?text=Ol%C3%A1,%20poderia%20me%20mandar%20o%20cat%C3%A1logo?" class="button">Vinícius Rocha</a>
+    <a href="https://wa.me/553499566716?text=Ol%C3%A1,%20poderia%20me%20mandar%20o%20cat%C3%A1logo?" class="button">Vitor Rocha</a>
+</body>
+</html>
